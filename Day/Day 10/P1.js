@@ -1,4 +1,4 @@
-// Checking conditions in arrays
+// Checking conditions in arrays operation
 const nums = [2,4,6,7];
 const hasOdd = nums.some(n=>n%2!==0);
 console.log(hasOdd);
