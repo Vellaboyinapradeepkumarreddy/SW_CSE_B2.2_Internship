@@ -16,7 +16,7 @@ async function getData() {
     const value = await promise;
     console.log(value);
 }
-getData();:  this keyword makes a synchrous function into 
+getData();:  this keyword makes a synchrous function  into 
 // an asynchronous code
 
 async function myFunction(){
