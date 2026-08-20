@@ -1,27 +1,39 @@
-import { useState } from "react";
-function FormDemo() {
-    const [name,setName] = useState("");
-    function handleChange(event) {
-        setName(event.target.value);
-    }
-    
-    function handleSubmit(event){
-        event.preventDefault();
-        alert("Submitted name: "+name);
-    }
+import './App.css'
+import ClickDemo from "./components/EventHandlerOne";
+import FormDemo from "./components/EventHandlerTwo";
+import ActionButtonDemo from "./components/EventHandlerThree";
 
-    return(
-        <form onSubmit={handleSubmit}>
-            <h4>Form Demo</h4>
-            Name:
-            <input type="text"
-                value = {name}
-                onChange = {handleChange}
-            />
-            <button type="submit">Submit</button>
-            <p>Entered name is: {name}</p>
-        </form>
-    );
+import SimpleList from "./components/ListAndKeysOne";
+
+import UserListHook from "./components/HookOne";
+import ThemeProviderDemo from "./components/HookTwo";
+
+import SimpleNameForm from "./components/FormOne";
+import SignupForm from "./components/FormTwo";
+import ValidatedForm from "./components/FormThree";
+
+import GitHubProfile from "./components/GithubApi";
+function App() {
+  return (
+    <>
+      {/* <ClickDemo/>
+      
+      <FormDemo />
+
+      <ActionButtonDemo />
+
+      <SimpleList/>
+
+      <UserListHook/> */}
+      {/* <ThemeProviderDemo/> */}
+
+      {/* <SimpleNameForm/> */}
+      {/* <SignupForm/> */}
+      {/* <ValidatedForm/> */}
+
+      <GitHubProfile username="rakeshdotkr"/>
+    </>
+  )
 }
 
-export default FormDemo;
+export default App;
